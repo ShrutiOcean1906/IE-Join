@@ -1,0 +1,34 @@
+Subject: CSE 510 : Database Management System Implementation 
+Project Phase: 3
+Teammates:  Shreyas Talele
+			Varun Gaur
+			Mihir Bhatt
+			Anique Tahir
+			Shruti Mahajan
+
+
+How to run:
+
+1. Copy paste the given code(minjava directory in Code directory) to any directory on machine where you want to run these tests. 
+2. Open command prompt and change directory to the directory where you copied the given project.
+3. Put all relation files(R.txt/S.txt/Q.txt) along with query files(e.g. query_1b.txt) in the src directory (e.g. /minjava/javaminibase/src/) 
+(for now all files are present in /minjava/javaminibase/src/ , so you can directly proceed to step 4.)
+4. type make db 
+5. type make test 
+6. once it is successfully build, run the tests by following command:
+
+for Task 1a,1b,2c,2d: 
+
+	java tests.JoinsDriver 1 <queryfilename> <tasknumber>
+
+	e.g. java tests.JoinsDriver 1 query_1b.txt 1b
+	e.g. java tests.JoinsDriver 1 query_1a.txt 1a
+	e.g. java tests.JoinsDriver 1 query_2c.txt 2c
+	e.g. java tests.JoinsDriver 1 query_2d.txt 2d
+
+for Task2a,2b:
+	
+	java tests.JoinsDriver <Relationfilename> <queryfilename> <tasknumber>
+
+	e.g. java tests.JoinsDriver R.txt query_2b.txt 2b
+	e.g. java tests.JoinsDriver R.txt query_2a.txt 2a
